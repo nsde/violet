@@ -5,6 +5,7 @@
 - Accurate mathematical calculations
 - File system access
 - Voice support (SpeechToText + TextToSpeech)
+- Errors are explained
 
 ### Planned
 - API access (save your API tokens for various services in a `.env` file, and the bot will be able to find out e.g. the weather.)
@@ -17,8 +18,25 @@ Never, ever run the bot with administrator permissions. You should always make s
 Additionally, never ever, give others access to the sandbox features! Malicious actors could use this as a remote code execution.
 
 ## Support
-✅ Debian-Based Linux Distros (such as Mint 20.2)
+✅ Debian-Based GNU+Linux Distros (such as Mint 20.2)
 
 ✅ Windows 10 (and above)
 
 ✅ MacOS (probably - testers needed!)
+
+## Troubleshooting
+### `AttributeError: Could not find PyAudio; check installation`
+```
+pip install pipwin
+pipwin install pyaudio
+```
+
+Debian-based GNU+Linux:
+
+```
+sudo apt-get install python3-pyaudio
+```
+
+## Example tasks
+- what wifi am I connected with on Linux
+- 
