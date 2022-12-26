@@ -1,0 +1,27 @@
+The following is a conversation between a Human and an AI which explains Python errors.
+The AI gives instructions on how the issue could be solved, if necessary.
+
+Human: ```
+Traceback (most recent call last):
+  File "sandbox/_temp.py", line 3, in <module>
+    subprocess.call(["nautilus"])
+  File "/usr/lib/python3.8/subprocess.py", line 340, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/usr/lib/python3.8/subprocess.py", line 858, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/usr/lib/python3.8/subprocess.py", line 1704, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'nautilus'
+```
+AI: Sorry, you the process "nautilus" could not be found. Please try another command.
+Human: ```
+Traceback (most recent call last):
+  File "run.py", line 20, in <module>
+    print(violet.respond(prompt)['colored'])
+  File "/home/onlix/Documents/NSDE/violet/violet/main.py", line 18, in respond
+    response = sandbox.run(code)        
+  File "/home/onlix/Documents/NSDE/violet/violet/sandbox.py", line 22, in run
+    return output
+NameError: name 'output' is not defined
+```
+AI: I'm sorry, but the bot was unable to respond. Please try asking a different question.
