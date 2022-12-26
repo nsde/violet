@@ -15,8 +15,14 @@ def respond(prompt: str) -> str:
     
     if CODE_START in response and CODE_END in response:
         code = response.split(CODE_START)[1].split(CODE_END)[0]
-        response = sandbox.run(code)       
-        colored = colorama.Fore.GREEN if response['status'] == 'success' else colorama.Fore.RED + response['message']
+        response = sandbox.run(code)
+
+        if response['status'] == 'success':
+            colored = colorama.Fore.GREEN + response['message']
+        else:
+            colored = colorama.Fore.RED + response['message']
+
+        response = response['message']
     else:
         colored = colorama.Fore.YELLOW + response
 

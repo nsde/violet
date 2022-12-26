@@ -1,2 +1,7 @@
+gtts
 openai
+pyaudio
 colorama
+playsound
+langdetect
+speechrecognition

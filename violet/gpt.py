@@ -9,6 +9,7 @@ openai.api_key = os.getenv('OPENAI_API_KEY')
 error_model = open('violet/error-model.txt').read()
 
 def generate(history: str, prompt: str) -> str:
+    print('Generating OpenAI completion!')
     completions = openai.Completion.create(
         model="text-davinci-003",
         prompt=f'{history}\nHuman: {prompt}\nAI: ',
@@ -24,6 +25,7 @@ def generate(history: str, prompt: str) -> str:
     return message[1:]
 
 def explain_error(prompt: str) -> str:
+    print('Explaining error...')
     completions = openai.Completion.create(
         model="text-davinci-003",
         prompt=f'{error_model}\nHuman: {prompt}\nAI: ',
