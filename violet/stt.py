@@ -7,7 +7,7 @@ def ask() -> str:
         with sr.Microphone() as source2:
             recognizer.adjust_for_ambient_noise(source2, duration=1)
             recording = recognizer.listen(source2, timeout=5)
-            return recognizer.recognize_google(recording, language='de-DE')
+            return recognizer.recognize_google(recording, language='en-US') # lang.detect(text)[1]
             
     except sr.RequestError:
         return 'I did not understand what you said.'

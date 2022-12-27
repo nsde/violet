@@ -38,5 +38,6 @@ sudo apt-get install python3-pyaudio
 ```
 
 ## Example tasks
-- what wifi am I connected with on Linux
-- 
+- What WiFi am I connected with (on Linux)?
+- Tell me a short story!
+- Translate "Hello there"!
