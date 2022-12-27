@@ -1,7 +1,7 @@
 gtts
 openai
-pyaudio
+# pyaudio
 colorama
 playsound
-langdetect
+# langdetect
 speechrecognition

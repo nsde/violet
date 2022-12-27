@@ -1,3 +1,5 @@
+"""Language detection module. Currently not used, as langdetect is too inaccurate!"""
+
 import langdetect
 
 LANGS = {
@@ -8,10 +10,10 @@ LANGS = {
 }
 
 def detect(text: str):
-    detected = langdetect.detect(text)
+    # detected = langdetect.detect(text)
     
-    for lang in LANGS:
-        if lang == detected:
-            return [lang, LANGS[lang]]
+    # for lang in LANGS:
+    #     if lang == detected:
+    #         return [lang, LANGS[lang]]
 
     return 'en-US'

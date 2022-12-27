@@ -40,4 +40,4 @@ sudo apt-get install python3-pyaudio
 ## Example tasks
 - What WiFi am I connected with (on Linux)?
 - Tell me a short story!
-- Translate "Hello there"!
+- Translate "Hello there" into Spanish!

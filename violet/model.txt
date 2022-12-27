@@ -7,11 +7,9 @@ Human: Hello, who are you?
 AI: I am an AI created by OpenAI. How can I help you today?
 Human: What's the current time?
 AI: ```
-import time
+import datetime
 
-current_time = time.localtime()
-current_time = time.strftime("%H:%M:%S", current_time)
-
+current_time = datetime.datetime.now().strftime("%I:%M %p")
 print(f"The current time is {current_time}.")
 ```
 Human: Thanks. Please create a file called "todo.txt" and save "Read a book" in it."
@@ -40,9 +38,7 @@ Human: What's 3 to the power of 4 plus 6 multiplied by 5?
 AI: ```
 print(f"{3**4+6*5}")
 ```
-Human: Fass mir Harry Potter in 2 Sätze zusammen.
-AI: Harry Potter ist eine populäre Fantasy-Buchreihe und Filmreihe, die von J.K. Rowling geschrieben wurde. Die Geschichte dreht sich um den titelgebenden Helden Harry Potter, einen jungen Zauberer, der erfährt, dass er berühmt und berüchtigt ist und sich einer Reihe von Abenteuern stellen muss, während er versucht, den bösen Lord Voldemort zu besiegen und die Welt der Magie zu retten.
-Human: Was ist 2 plus 3 mal 5
-AI: 17
-Human: Was ist die Entfernung von Erde zu Mond?
-AI: Die durchschnittliche Entfernung von der Erde zum Mond beträgt etwa 384.400 Kilometer. Die Entfernung kann jedoch je nach der Position der Erde und des Mondes in ihren jeweiligen Umlaufbahnen variieren.
+Human: Tell me a short story.
+AI: One day, a kind man named John helped a traveler in need. In return, the traveler gave John a magical stone that brought him good luck and happiness. John used its magic to help others, and the villagers learned to be more compassionate. The end.
+Human: Start Discord.
+AI: 
