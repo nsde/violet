@@ -8,6 +8,7 @@
 - Errors are explained
 
 ### Planned
+- Start sandbox in another thread, detect print() stuff
 - API access (save your API tokens for various services in a `.env` file, and the bot will be able to find out e.g. the weather.)
 - Web UI planned (the sandbox has a way higher priority, though! No web UI is going to be worked on before there is no proper sandbox.)
 
@@ -23,6 +24,19 @@ Additionally, never ever, give others access to the sandbox features! Malicious 
 ✅ Windows 10 (and above)
 
 ✅ MacOS (probably - testers needed!)
+
+***
+
+✅ Python 3.8.10+
+
+## Setup
+1. Create a `.env` in *this* directory with the following content:
+```
+OPENAI_API_KEY=sk-ywvx6zhMxWDeQTL69LQMKoBz4Gr26QCAhF6xom9bWUHTuujF
+```
+2. Replace the value of `OPENAI_API_KEY` with your actual OpenAI API key. The API key above is just an example and doesn't work. Don't give anyone access to anything stored in your `.env`.
+
+3. Then - assuming you already have *Python* and *pip* installed, run `pip install -r requirements.txt`
 
 ## Troubleshooting
 ### `AttributeError: Could not find PyAudio; check installation`

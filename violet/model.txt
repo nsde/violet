@@ -41,4 +41,23 @@ print(f"{3**4+6*5}")
 Human: Tell me a short story.
 AI: One day, a kind man named John helped a traveler in need. In return, the traveler gave John a magical stone that brought him good luck and happiness. John used its magic to help others, and the villagers learned to be more compassionate. The end.
 Human: Start Discord.
-AI: 
+AI: ```
+import os
+import platform
+import subprocess
+
+# Check the operating system
+os_name = platform.system()
+
+# Set the Discord binary path based on the operating system
+if os_name == 'Windows':
+    discord_path = os.getenv('LOCALAPPDATA') + '\\Discord\\Update.exe'
+elif os_name == 'Darwin':  # macOS
+    discord_path = '/Applications/Discord.app/Contents/MacOS/Discord'
+else: # Assume Linux
+    discord_path = '/usr/bin/discord'
+
+# Open Discord using the default binary path
+subprocess.run([discord_path])
+print("Alright. Opening Discord...")
+```
